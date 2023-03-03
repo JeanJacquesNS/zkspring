@@ -1,0 +1,32 @@
+<?link rel="stylesheet" type="text/css" href="/resources/css/style.css"?>
+<zk xmlns:n="native" xmlns:h="http://www.w3.org/1999/xhtml">
+    <custom-attributes org.zkoss.zul.image.preload="true"/>
+    <div class="error-pagewrap" apply="">
+        <div class="error-page-int">
+
+            <div class="content-error">
+                <div class="hpanel">
+                    <div class="panel-body">
+                        <n:form action="/login" id="loginForm" method="post">
+                            <div class="form-group">
+                                <n:label class="control-label" >Username</n:label>
+                                <n:input type="text" placeholder="example@gmail.com" title="Please enter you username" required="" value="" name="username" id="username" class="form-control"></n:input>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" >Password</label>
+                                <n:input type="password" title="Please enter your password" placeholder="******" required="" value="" name="password" id="password" class="form-control"></n:input>
+                            </div>
+
+                            <button type="submit" class="btn btn-success btn-block loginbtn">Login</button>
+                            <a class="btn btn-default btn-block" href="#">Register</a>
+                        </n:form>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center login-footer">
+                <n:p>Copyright © 2018. All rights reserved. Template by <a href="https://colorlib.com/wp/templates/">Colorlib</a></n:p>
+            </div>
+        </div>
+    </div>
+    <n:script type="module" src="/resources/js/script.js"/>
+</zk>
